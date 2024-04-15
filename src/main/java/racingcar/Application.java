@@ -71,7 +71,7 @@ class Car {
     public static String[] getValidCarNames(Scanner scanner) {
         String[] carNames;
         do {
-            System.out.println("경주할 자동차의 이름을 입력하세요.(이름은 쉼표(,) 기준으로 구분 / 최대 10개)");
+            System.out.println("경주할 자동차의 이름을 입력하세요.(이름은 쉼표(,) 기준으로 구분 / 최대 10개 / 1개당 최대 5글자)");
             String input = scanner.nextLine();
             if (input.contains(",,")) {
                 System.out.println("잘못된 입력(쉼표가 두개 들어감)");
